@@ -3,10 +3,27 @@
   background-color: #d279a6;
   padding: 3px 3px;
 }
+.navright ul li a{
+float: right;
+
+}
+body{
+  margin: 0px;
+}
+
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: black;
+  font-size: 40px;
+  font-family: Orbitron;
+  letter-spacing: 7px;
+}
 
 
-.header a {
-  display: flex;
+.nav-item a{
   float: left;
   color: white;
   text-align: center;
@@ -27,21 +44,14 @@
   font-family:Georgia, 'Times New Roman', Times, serif;
   
 }
-.title1 {
-  font-size: 20px;
-  font-style: italic;
-  font-family:serif;
-}
 
 
 .header a:hover {
   background-color: royalblue;
-  color: black;
-}
+  color: white;
+  font-size: 22px;
+} 
 
-.header-right {
-  float: right;
-}
 
 .footer {
   position:static;
@@ -57,15 +67,7 @@
  background-color:#f5ecf1 ;
 }
 
-.title1::after{
-content: '';
-animation: change 6s infinite linear;
-}
-@keyframes change{
- 0%{content:"Software Engineer";}
- 50%{content:"A Freelancer";}
- 100%{content:"Student at BUKC";}
-}
+
 
 .move::after{
   content: '';
@@ -131,42 +133,48 @@ animation: change 6s infinite linear;
 
 .projectsdiv1{
   background-image:url('Images/projecct1.PNG');
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
   border-radius: 40px;
   padding: 50px 50px;
   margin: 30px 20px;
+}
+.projectsdiv1 a{
+  background-color: #d279a6;
+  color:white;
 }
 
 .projectsdiv2{
-  background-image:url('Images/projecct1.PNG');
-  width: 200px;
-  height: 200px;
+  background-image:url('Images/project2.PNG');
+  background-size: cover;
+  width: 300px;
+  height: 300px;
   border-radius: 40px;
   padding: 50px 50px;
   margin: 30px 20px;
+}
+.projectsdiv2 a{
+  background-color: #d279a6;
+  color:white;
 }
 
 .projectsdiv3{
-  background-image:url('Images/projecct1.PNG');
-  width: 200px;
-  height: 200px;
+  background-image:url('Images/project3.PNG');
+  background-size: cover;
+  width: 300px;
+  height: 300px;
   border-radius: 40px;
   padding: 50px 50px;
   margin: 30px 20px;
+}
+.projectsdiv3 a{
+  background-color: #d279a6;
+  color:white;
 }
 
-.projectsdiv4{
-  background-image:url('Images/projecct1.PNG');
-  width: 200px;
-  height: 200px;
-  border-radius: 40px;
-  padding: 50px 50px;
-  margin: 30px 20px;
-}
 
 .btn{
-  background-color: #d279a6;
   text-decoration: none;
   font-size: 30px;
   color: white;
@@ -205,6 +213,7 @@ a button:hover{
  font-size: 30px;
  color: white;
  border-radius: 30px;
+ padding: 10px;
 }
 .click:hover{
   background-color: royalblue;
